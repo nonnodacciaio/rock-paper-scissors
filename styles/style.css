@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #aaa;
+  --text-color: #333;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  height: 100vh;
+  margin: auto;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.board > div {
+  height: 20vh;
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 50px;
+}
+
+.user-input > input {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-size: 30px;
+  padding: 0.5em 2em;
+  border-style: none;
+}
+
+.user-input > input:hover {
+  background-color: #ddd;
+}
